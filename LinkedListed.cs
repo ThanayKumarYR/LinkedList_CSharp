@@ -28,19 +28,25 @@ namespace LinkedListProblem
                 }
             }
             else { head = null; } 
-              
         }
 
         public void Display()
-        { 
-            NODE cur = head;
-            Console.WriteLine();
-            while (cur != null) 
+        {
+            if (head != null)
             {
-                Console.Write(cur.Info + " ");   
-                cur = cur.Next;
+                NODE cur = head;
+                Console.WriteLine();
+                while (cur != null)
+                {
+                    Console.Write(cur.Info + " ");
+                    cur = cur.Next;
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
+            else
+            {
+                Console.WriteLine("No elements in the Linked List !");
+            }
         }
 
         public void Add(params int[] numbers)
