@@ -10,7 +10,8 @@ namespace LinkedListProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to custome linked lists");
+            LinkedListed list = new LinkedListed(70,30,56);
+            list.Display();
         }
     }
 }
