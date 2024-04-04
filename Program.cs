@@ -26,6 +26,11 @@ namespace LinkedListProblem
                 list3.Append(30);
                 list3.Append(70);
                 list3.Display();    
+
+                LinkedListed list4 = new LinkedListed(70,56);
+                list4.Insert(1, 30);
+                list4.Display();
+
             }
             catch (Exception ex) 
             {

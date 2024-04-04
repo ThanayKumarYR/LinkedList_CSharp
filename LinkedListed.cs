@@ -102,7 +102,31 @@ namespace LinkedListProblem
                 }
             }
             else { Console.WriteLine("No element is appended !"); }
-            
+        }
+
+        public void Insert(int index,int num)
+        {
+
+            if (head == null)
+            {
+                head = new NODE();
+                head.Info = num;
+                head.Next = null;
+            }
+            else
+            {
+                NODE cur, next,insert;
+                cur = head;
+                for (int i = 0; i < index-1; i++)
+                {
+                    cur = cur.Next;
+                }
+                next = cur.Next;
+                insert = new NODE();
+                insert.Info = num;
+                cur.Next = insert;
+                insert.Next = next;
+            }
         }
     }
 }
