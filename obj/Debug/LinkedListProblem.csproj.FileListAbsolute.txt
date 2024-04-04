@@ -1,0 +1,7 @@
+C:\Users\Thanay\source\repos\LinkedListProblem\bin\Debug\LinkedListProblem.exe.config
+C:\Users\Thanay\source\repos\LinkedListProblem\bin\Debug\LinkedListProblem.exe
+C:\Users\Thanay\source\repos\LinkedListProblem\bin\Debug\LinkedListProblem.pdb
+C:\Users\Thanay\source\repos\LinkedListProblem\obj\Debug\LinkedListProblem.csproj.AssemblyReference.cache
+C:\Users\Thanay\source\repos\LinkedListProblem\obj\Debug\LinkedListProblem.csproj.CoreCompileInputs.cache
+C:\Users\Thanay\source\repos\LinkedListProblem\obj\Debug\LinkedListProblem.exe
+C:\Users\Thanay\source\repos\LinkedListProblem\obj\Debug\LinkedListProblem.pdb
