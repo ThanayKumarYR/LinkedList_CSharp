@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LinkedListProblem
 {
-    class LinkedListed
+    public class LinkedListed
     {
-        public NODE head;
+        public NODE head { get; set; }
         public LinkedListed(params int[] numbers)
         {
             if (numbers.Length != 0)
@@ -30,7 +30,7 @@ namespace LinkedListProblem
             else { head = null; } 
         }
 
-        public void Display()
+        public virtual void Display()
         {
             if (head != null)
             {
@@ -49,7 +49,7 @@ namespace LinkedListProblem
             }
         }
 
-        public void Add(params int[] numbers)
+        public virtual void Add(params int[] numbers)
         {
             if (numbers.Length != 0)
             {
@@ -74,7 +74,7 @@ namespace LinkedListProblem
                  
         }
 
-        public void Append(params int[] numbers)
+        public virtual void Append(params int[] numbers)
         {
             if (numbers.Length != 0)
             {
@@ -104,7 +104,7 @@ namespace LinkedListProblem
             else { Console.WriteLine("No element is appended !"); }
         }
 
-        public void Insert(int index,int num)
+        public virtual void Insert(int index,int num)
         {
 
             if (head == null)
@@ -129,7 +129,7 @@ namespace LinkedListProblem
             }
         }
 
-        public void Pop()
+        public virtual void Pop()
         {
 
             if (head != null)
@@ -142,7 +142,7 @@ namespace LinkedListProblem
             }
         }
 
-        public void PopLast()
+        public virtual void PopLast()
         {
 
             if (head != null)
