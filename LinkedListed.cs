@@ -38,7 +38,7 @@ namespace LinkedListProblem
                 Console.WriteLine();
                 while (cur != null)
                 {
-                    Console.Write(cur.Info + " ");
+                    Console.Write(cur.Info + " -> ");
                     cur = cur.Next;
                 }
                 Console.WriteLine();
@@ -51,13 +51,15 @@ namespace LinkedListProblem
 
         public void Add(params int[] numbers)
         {
+            if (numbers.Length != 0)
+            {
                 if (head == null)
                 {
                     head = new NODE();
                     head.Info = numbers[0];
                     head.Next = null;
                 }
-                else 
+                else
                 {
                     foreach (int num in numbers)
                     {
@@ -66,7 +68,40 @@ namespace LinkedListProblem
                         cur.Next = head;
                         head = cur;
                     }
-                }  
+                }
+            }
+            else Console.WriteLine("No element is added !");
+                 
+        }
+
+        public void Append(params int[] numbers)
+        {
+            if (numbers.Length != 0)
+            {
+                if (head == null)
+                {
+                    head = new NODE();
+                    head.Info = numbers[0];
+                    head.Next = null;
+                }
+                else
+                {
+                    NODE cur = head;
+                    while (cur.Next != null)
+                    {
+                        cur = cur.Next;
+                    }
+                    foreach(int num in numbers)
+                    {
+                        NODE last = new NODE();
+                        last.Info = num;
+                        last.Next = null;
+                        cur.Next = last;
+                        cur = last;
+                    }
+                }
+            }
+            else { Console.WriteLine("No element is appended !"); }
             
         }
     }

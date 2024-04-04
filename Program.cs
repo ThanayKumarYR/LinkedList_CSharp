@@ -20,6 +20,12 @@ namespace LinkedListProblem
                 list2.Add(30);
                 list2.Add(56);
                 list2.Display();
+
+                LinkedListed list3 = new LinkedListed();
+                list3.Append(56);
+                list3.Append(30);
+                list3.Append(70);
+                list3.Display();    
             }
             catch (Exception ex) 
             {
