@@ -33,8 +33,13 @@ namespace LinkedListProblem
 
                 LinkedListed list5 = new LinkedListed(70, 30, 56);
                 list5.Display();
-                list5.pop();
+                list5.Pop();
                 list5.Display();
+
+                LinkedListed list6 = new LinkedListed(70, 30, 56);
+                list6.Display();
+                list6.PopLast();
+                list6.Display();
 
             }
             catch (Exception ex) 

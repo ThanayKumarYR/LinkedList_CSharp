@@ -129,12 +129,30 @@ namespace LinkedListProblem
             }
         }
 
-        public void pop()
+        public void Pop()
         {
 
             if (head != null)
             {
                 head = head.Next;
+            }
+            else
+            {
+                Console.WriteLine("No element to delete !");
+            }
+        }
+
+        public void PopLast()
+        {
+
+            if (head != null)
+            {
+                NODE cur = head;
+                while (cur.Next.Next != null)
+                {
+                    cur = cur.Next;
+                }
+                cur.Next = null;
             }
             else
             {
