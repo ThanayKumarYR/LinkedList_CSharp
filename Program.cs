@@ -41,17 +41,28 @@ namespace LinkedListProblem
                 //list6.PopLast();
                 //list6.Display();
 
-                Stacked stacked = new Stacked(1,2,3,4,5);
-                stacked.Add();
-                stacked.Append();
-                stacked.PopLast();
-                stacked.Insert(1,0);
-                stacked.Peek();
-                stacked.Push(6);
-                stacked.Display();
-                stacked.Pop();
-                stacked.Display();
-                
+                //Stacked stacked = new Stacked(1,2,3,4,5);
+                //stacked.Add();
+                //stacked.Append();
+                //stacked.PopLast();
+                //stacked.Insert(1,0);
+                //stacked.Peek();
+                //stacked.Push(6);
+                //stacked.Display();
+                //stacked.Pop();
+                //stacked.Display();
+
+                Queues queue = new Queues(1, 2, 3, 4, 5);
+                queue.Add();
+                queue.Append();
+                queue.PopLast();
+                queue.Insert(1, 0);
+                queue.Peek();
+                queue.Append(6);
+                queue.Display();
+                queue.Pop();
+                queue.Display();
+
             }
             catch (Exception ex) 
             {
