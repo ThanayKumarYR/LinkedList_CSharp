@@ -10,8 +10,22 @@ namespace LinkedListProblem
     {
         static void Main(string[] args)
         {
-            LinkedListed list = new LinkedListed(70,30,56);
-            list.Display();
+            try
+            {
+                LinkedListed list = new LinkedListed(70, 30, 56);
+                list.Display();
+
+                LinkedListed list2 = new LinkedListed();
+                list2.Add(70);
+                list2.Add(30);
+                list2.Add(56);
+                list2.Display();
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);   
+            }
+            
         }
     }
 }

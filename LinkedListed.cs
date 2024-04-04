@@ -11,19 +11,24 @@ namespace LinkedListProblem
         public NODE head;
         public LinkedListed(params int[] numbers)
         {
-            head = new NODE();
-            head.Info = numbers[0];
-            head.Next = null;
-            if (numbers.Length > 1)
+            if (numbers.Length != 0)
             {
-                for (int i = 1; i < numbers.Length; i++)
+                head = new NODE();  
+                head.Info = numbers[0];
+                head.Next = null;
+                if (numbers.Length > 1)
                 {
-                    NODE cur = new NODE();
-                    cur.Info = numbers[i];
-                    cur.Next = head;
-                    head = cur;
+                    for (int i = 1; i < numbers.Length; i++)
+                    {
+                        NODE cur = new NODE();
+                        cur.Info = numbers[i];
+                        cur.Next = head;
+                        head = cur;
+                    }
                 }
-            }  
+            }
+            else { head = null; } 
+              
         }
 
         public void Display()
@@ -36,6 +41,27 @@ namespace LinkedListProblem
                 cur = cur.Next;
             }
             Console.WriteLine();
+        }
+
+        public void Add(params int[] numbers)
+        {
+                if (head == null)
+                {
+                    head = new NODE();
+                    head.Info = numbers[0];
+                    head.Next = null;
+                }
+                else 
+                {
+                    foreach (int num in numbers)
+                    {
+                        NODE cur = new NODE();
+                        cur.Info = num;
+                        cur.Next = head;
+                        head = cur;
+                    }
+                }  
+            
         }
     }
 }
