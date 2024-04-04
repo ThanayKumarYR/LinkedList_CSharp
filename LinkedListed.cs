@@ -128,5 +128,18 @@ namespace LinkedListProblem
                 insert.Next = next;
             }
         }
+
+        public void pop()
+        {
+
+            if (head != null)
+            {
+                head = head.Next;
+            }
+            else
+            {
+                Console.WriteLine("No element to delete !");
+            }
+        }
     }
 }
